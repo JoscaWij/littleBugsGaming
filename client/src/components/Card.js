@@ -33,7 +33,7 @@ const GameCard = styled.div`
 `;
 
 const GameCardImage = styled.img`
-  background-image: url({${(props) => props.src}});
+  background-image: url(${(props) => props.src});
   background-size: cover;
   background-repeat: no-repeat;
   width: inherit;
