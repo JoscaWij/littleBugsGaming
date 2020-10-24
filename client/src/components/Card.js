@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
-import PlatzhalterImageSrc from "./../assets/Platzhalter.jpg";
 
 const Card = ({ imageSrc }) => {
   return (
@@ -32,7 +31,7 @@ const GameCard = styled.div`
 `;
 
 const GameCardImage = styled.img`
-  background-image: url(${PlatzhalterImageSrc});
+  background-image: url({${(props) => props.src}});
   background-size: cover;
   background-repeat: no-repeat;
   width: inherit;
