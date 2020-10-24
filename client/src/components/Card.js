@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 
-const Card = ({ imageSrc, gameName }) => {
+const Card = ({ imageSrc, gameName, isReady }) => {
   return (
     <GameCard>
       <GameCardImage src={imageSrc} /> {gameName}
-      <ComingSoonBadge>Coming soon</ComingSoonBadge>
+      {!isReady && <ComingSoonBadge>Coming soon</ComingSoonBadge>}
     </GameCard>
   );
 };
@@ -16,6 +16,7 @@ export default Card;
 Card.propTypes = {
   imageSrc: PropTypes.string,
   gameName: PropTypes.string,
+  isReady: PropTypes.bool,
 };
 
 const GameCard = styled.div`
