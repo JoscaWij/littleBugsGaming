@@ -15,6 +15,9 @@ export default Card;
 const GameCard = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 0.2em;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
