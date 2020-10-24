@@ -10,7 +10,8 @@
     "dev-server": "node server.js",
     "prettify": "prettier --write .",
     "lint": "eslint . --ext .js",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm run build && npm run build-storybook",
+    "storybook": "cd client && npm run storybook",
     "postinstall": "cd client && npm install"
   },
   "repository": {
