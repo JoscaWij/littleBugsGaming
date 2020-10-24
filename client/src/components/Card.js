@@ -6,6 +6,7 @@ const Card = () => {
   return (
     <GameCard>
       <GameCardImage /> hello
+      <ComingSoonBadge>Coming soon</ComingSoonBadge>
     </GameCard>
   );
 };
@@ -21,8 +22,8 @@ const GameCard = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  width: 20vh;
-  height: 20vh;
+  width: 25vh;
+  height: 25vh;
 `;
 
 const GameCardImage = styled.img`
@@ -34,4 +35,16 @@ const GameCardImage = styled.img`
   z-index: -2;
   position: absolute;
   border-radius: inherit;
+`;
+
+const ComingSoonBadge = styled.span`
+  border-radius: inherit;
+  font-size: bold;
+  letter-spacing: 0;
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(180, 180, 180, 0.7);
+  transform: rotate(-15deg);
+  padding: 0.3em;
+  border: #fff 2px solid;
 `;
