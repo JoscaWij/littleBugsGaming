@@ -1,17 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import PlatzhalterImageSrc from "./../assets/Platzhalter.jpg";
 
-const Card = () => {
+const Card = ({ imageSrc }) => {
   return (
     <GameCard>
-      <GameCardImage /> hello
+      <GameCardImage src={imageSrc} /> hello
       <ComingSoonBadge>Coming soon</ComingSoonBadge>
     </GameCard>
   );
 };
 
 export default Card;
+
+Card.propTypes = {
+  imageSrc: PropTypes.string,
+};
 
 const GameCard = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
