@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import backgroundImageSrc from "./../assets/backgroundImage_unsplash.jpg";
+import backgroundImageSrc from "./../assets/images/backgroundImage_unsplash.jpg";
 
 const Header = () => {
   return (
