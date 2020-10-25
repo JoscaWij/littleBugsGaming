@@ -29,8 +29,10 @@ const GameCard = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  width: 25vh;
-  height: 25vh;
+  border: solid #fff 2px;
+  margin: 1em;
+  width: 30vh;
+  height: 30vh;
 `;
 
 const GameCardImage = styled.img`
