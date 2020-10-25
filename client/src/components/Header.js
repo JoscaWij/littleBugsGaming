@@ -16,10 +16,13 @@ const HeaderWrapper = styled.div`
   background-image: url(${backgroundImageSrc});
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: center;
   width: 100%;
   text-align: center;
 `;
 
-const Title = styled.h2`
+const Title = styled.div`
   padding: 1em;
+  font-weight: bolder;
+  font-size: 2em;
 `;
