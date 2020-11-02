@@ -33,6 +33,7 @@ const Title = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   flex-basis: 100%;
+  text-shadow: black 2px 3px;
 
   > * {
     font-size: 0.5em;
