@@ -5,7 +5,10 @@ import backgroundImageSrc from "./../assets/images/backgroundImage_unsplash.jpg"
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Title>Welcome</Title>
+      <Title>
+        Little Buggs Gaming
+        <span>A little playground for gaming ideas</span>
+      </Title>
     </HeaderWrapper>
   );
 };
@@ -23,6 +26,16 @@ const HeaderWrapper = styled.div`
 
 const Title = styled.div`
   padding: 1em;
-  font-weight: bolder;
   font-size: 2em;
+  font-weight: bold;
+  font-family: "GamingFont";
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+
+  > * {
+    font-size: 0.5em;
+    flex-basis: 100%;
+  }
 `;
