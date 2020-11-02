@@ -30,11 +30,6 @@ const GlobalStyles = () => {
         div {
           margin: 0;
           padding: 0;
-          font-family: "GamingFont";
-        }
-        h1,
-        h2 {
-          font-family: "GamingFont";
         }
         a {
           text-decoration: none;
