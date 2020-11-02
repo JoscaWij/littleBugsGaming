@@ -5,10 +5,10 @@ import Card from "../components/Card";
 const MainPage = () => {
   return (
     <CardContainer>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card imageSrc={""} gameName="GAME" isReady={false} />
+      <Card imageSrc={""} gameName="GAME" isReady={false} />
+      <Card imageSrc={""} gameName="GAME" isReady={false} />
+      <Card imageSrc={""} gameName="GAME" isReady={false} />
     </CardContainer>
   );
 };
